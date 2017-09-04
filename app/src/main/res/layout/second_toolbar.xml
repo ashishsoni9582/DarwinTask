@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        >
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/secondtoolbar"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/secondToolImgView"
+        android:background="#00000000"
+        android:src="@drawable/backicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:textSize="32sp"
+        android:id="@+id/secondToolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>
+</LinearLayout>

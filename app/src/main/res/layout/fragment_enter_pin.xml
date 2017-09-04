@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="50dp"
+
+    android:layout_height="match_parent"
+    tools:context=".EnterPin">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:weightSum="4"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/color_circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/color_circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/circle_without_color"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/circle_without_color"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            ></View>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/drop_shadow"></View>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:id="@+id/keyboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:divider="@drawable/keyboard_divider"
+                android:orientation="vertical"
+                android:showDividers="beginning|middle|end">
+
+                <TableRow style="@style/keyboard_row">
+
+                    <TextView
+                        android:id="@+id/t9_key_1"
+                        style="@style/keyboard_number_button"
+                        android:text="@string/number_one"/>
+
+                    <TextView
+                        android:id="@+id/t9_key_2"
+                        style="@style/keyboard_number_button"
+                        android:text="@string/number_two"/>
+
+                    <TextView
+                        android:id="@+id/t9_key_3"
+                        style="@style/keyboard_number_button"
+                        android:text="@string/number_three"/>
+                </TableRow>
+
+                <TableRow style="@style/keyboard_row">
+
+                    <TextView
+                        android:id="@+id/t9_key_4"
+                        style="@style/keyboard_number_button"
+                        android:text="@string/number_four"/>
+
+                    <TextView
+                        android:id="@+id/t9_key_5"
+                        style="@style/keyboard_number_button"
+                        android:text="@string/number_five"/>
+
+                    <TextView
+                        android:id="@+id/t9_key_6"
+                        style="@style/keyboard_number_button"
+                        android:text="@string/number_six"/>
+                </TableRow>
+
+                <TableRow style="@style/keyboard_row">
+
+                    <TextView
+                        android:id="@+id/t9_key_7"
+                        style="@style/keyboard_number_button"
+                        android:text="@string/number_seven"/>
+
+                    <TextView
+                        android:id="@+id/t9_key_8"
+                        style="@style/keyboard_number_button"
+                        android:text="@string/number_eight"/>
+
+                    <TextView
+                        android:id="@+id/t9_key_9"
+                        style="@style/keyboard_number_button"
+                        android:text="@string/number_nine"/>
+                </TableRow>
+
+                <TableRow style="@style/keyboard_row">
+
+                    <ImageView
+                        android:src="@drawable/backspace"
+                        android:id="@+id/t9_key_clear"
+                        style="@style/keyboard_button"
+                        android:scaleType="center"
+                        android:text="@string/btn_clear"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <TextView
+                        android:id="@+id/t9_key_0"
+                        style="@style/keyboard_number_button"
+                        android:text="@string/number_zero"/>
+
+                    <TextView
+                        android:id="@+id/t9_key_backspace"
+                        style="@style/keyboard_button"
+                        android:textSize="42dp"
+                        android:text="@string/btn_dot"
+                        />
+                </TableRow>
+            </TableLayout>
+
+            <ImageButton
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/forwardchevron"
+                android:background="#00000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
